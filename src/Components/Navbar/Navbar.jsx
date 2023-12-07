@@ -34,7 +34,7 @@ const Navbar = () => {
       <Link to={'/'}><div className='logoSelf'>CSTech</div></Link>
 
         <div className='navUl'>
-          <p>Home</p>
+          <Link to={'/'}><p>Home</p></Link>
           <p>Course</p>
           <p>Portfolio</p>
         </div>
@@ -44,7 +44,9 @@ const Navbar = () => {
 
       <div className='secondNavDiv'>
           <p>About us</p>
-          <button className='signupBtn'>Book Session</button>
+
+          <Link to={'/contact'}><button className='signupBtn'>Book Session</button></Link>
+          
       </div>
     </div>
 
