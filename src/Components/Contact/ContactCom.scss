@@ -96,13 +96,24 @@
 
 
 @media only screen and (min-width: $small-One) and (max-width: $medium-Two) {
+    .contactCard{
+        background-color: $my-blue;
+        padding: 30px;
+        border-radius: 10px;
+    }
+   
+   
     .contactCard h2{
         font-size: 20px;
     }
 
+    .contactCard p{
+        font-size: 12px;
+    }
+
     
     .formDiv {
-        padding: 30px 5%;
+        padding: 30px 0;
     }
 
     .inputDiv label{
@@ -116,6 +127,7 @@
 
     .myDropdown{
         border-radius: 5px;
+        padding: 13px;
     }
 
     .inputDiv textarea{
