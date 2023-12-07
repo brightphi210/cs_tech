@@ -20,7 +20,7 @@ const SectionThree = () => {
             </div>
 
             <div className='courseEachDiv'>
-                <span className='courseIcon'>< IoLogoJavascript className='myIcon'/></span>
+                <span className='courseIcon icons2'>< IoLogoJavascript className='myIcon'/></span>
                 <h2>Javasript</h2>
                 <p>We Offer Comprehensive Js Course</p>
             </div>

@@ -37,6 +37,10 @@
     margin: auto;
 }
 
+.icons2{
+    background-color: $my-blue;
+}
+
 .myIcon{
     font-size: 20px;
     color: white;
@@ -72,6 +76,11 @@
     .secFourTwo{
         font-size: 15px;
     }
+
+    .myIcon{
+        font-size: 15px;
+        color: white;
+    }
     
     .courseDiv{
         display: block;
@@ -80,6 +89,11 @@
     .courseEachDiv{
         padding: 20px;
         margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    .courseIcon{
+        padding: 8px;
     }
 
     .courseEachDiv p{
@@ -88,6 +102,7 @@
 
     .courseEachDiv h2{
         font-size: 20px;
+        padding: 6px 0;
     }
 
     .sectionFour button{
