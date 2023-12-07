@@ -48,7 +48,7 @@ const SectionTwo = () => {
 
 
         <div className='sectionTwoOne'>
-            <h2>Development Infrastructures : </h2>
+            <h2>Portfolio: </h2>
             <div className='sectionTwoFlex'>
                 <div className='weDivOne'>
                     <img src={imgd} alt="" />

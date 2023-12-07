@@ -1,0 +1,96 @@
+@import '../variables.scss';
+
+*{@include default}
+
+
+.sectionFour{
+    padding: 30px 5%;
+    text-align: center;
+}
+
+.secFourTwo{
+    padding: 30px 0;
+    font-weight: 400;
+}
+
+.courseDiv{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.courseEachDiv{
+    padding: 30px;
+    background-color: $my-white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.courseIcon{
+    background-color: $my-yellow;
+    padding: 10px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+
+.myIcon{
+    font-size: 20px;
+    color: white;
+}
+
+.courseEachDiv h2{
+    padding: 10px 0;
+    font-weight: 400;
+}
+
+.sectionFour button{
+    padding: 10px 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: $my-blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    gap: 5px;
+}
+
+
+
+@media only screen and (min-width: $small-One) and (max-width: $medium-Two) {
+    .sectionFour{
+        padding: 30px 8%;
+        text-align: center;
+    }
+
+    .secFourTwo{
+        font-size: 15px;
+    }
+    
+    .courseDiv{
+        display: block;
+    }
+
+    .courseEachDiv{
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .courseEachDiv p{
+        font-size: 12px;
+    }
+
+    .courseEachDiv h2{
+        font-size: 20px;
+    }
+
+    .sectionFour button{
+        font-size: 12px;
+    }
+}
