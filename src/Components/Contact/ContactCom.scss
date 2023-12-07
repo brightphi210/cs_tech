@@ -5,6 +5,7 @@
 
 .contactSession{
     padding: 100px 5%;
+    padding-bottom: 20px;
 }
 
 .contactCard{
@@ -78,12 +79,14 @@
 
 
 .formDiv button{
-    padding: 10px 30px;
+    padding: 10px 40px;
     border: none;
     border-radius: 10px;
     display: flex;
     margin: auto;
     margin-top: 20px;
+    background-color: $my-blue;
+    color: white;
 }
 
 
