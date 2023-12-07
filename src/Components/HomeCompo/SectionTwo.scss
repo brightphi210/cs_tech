@@ -75,10 +75,11 @@
 .weDivOne h2{
     font-size: 20px;
     padding: 10px 0;
+    font-weight: 500;
 }
 
 .weDivOne p{
-    font-size: 13px;
+    font-size: 15px;
     padding: 5px 0;
     font-weight: 300;
 }
@@ -139,6 +140,11 @@
     .weDivOne{
         border-radius: 10px;
         padding: 20px;
+    }
+
+    .weDivOne h1{
+        font-size: 20px;
+        padding-top: 10px;
     }
     
     .weDivOne h2{
