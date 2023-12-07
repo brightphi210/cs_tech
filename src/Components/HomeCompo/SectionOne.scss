@@ -23,6 +23,10 @@
     width: 500px;
 }
 
+.smH2{
+    display: none;
+}
+
 
 .sectioOneFirst span{
     color: $my-yellow;
@@ -90,10 +94,17 @@
 
 @media only screen and (min-width: $small-One) and (max-width: $medium-Two) {
     .sectioOneMain{
-        padding: 100px 8%;
+        padding: 100px 5%;
         padding-bottom: 20px;
     }
     
+    .smH2{
+        display: block;
+    }
+
+    .bigH2{
+        display: none;
+    }
     .sectionOne{
         display: block;
         align-items: center;
@@ -112,8 +123,8 @@
     }
 
     .sectioOneFirst h2{
-        font-size: 21px;
-        font-weight: 500;
+        font-size: 22px;
+        font-weight: 600;
     }
 
  

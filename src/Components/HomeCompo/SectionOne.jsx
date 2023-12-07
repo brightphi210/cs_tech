@@ -8,10 +8,17 @@ const SectionOne = () => {
     <div className='sectioOneMain'>
         <div className='sectionOne'>
             <div className='sectioOneFirst'>
-                <h2>
+                <h2 className='bigH2'>
                     We build products to <span>WORK</span>, <br /> 
                     and we build them <span>FAST </span> at <br />  your <span>  BUDGET</span>.
                 </h2>
+
+                <h2 className='smH2'>
+                    We build products to <span>WORK</span>, <br /> 
+                    and we build them <span>FAST </span> at   your <span>  BUDGET</span>.
+                </h2>
+
+
                 <button className='bookNow'>Book Session Here! </button>
             </div>
 
