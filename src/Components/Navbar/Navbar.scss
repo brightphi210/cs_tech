@@ -48,6 +48,7 @@
 
 .navUl p{
     cursor: pointer;
+    color: black;
 }
 
 
@@ -114,8 +115,7 @@
         
     }
 
-    .firstNavDiv img{
-        cursor: pointer;
+    .logoSelf{
         display: none;
         
     }
@@ -149,7 +149,6 @@
     .navUl p{
         margin-bottom: 10px;
         font-size: 15px;
-        color: $my-blue;
         width: fit-content;
     }
 

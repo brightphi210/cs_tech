@@ -15,14 +15,16 @@
 
 
 @mixin hover-blue{
-    background-color:#5b5aa1;
+    background-color:#ffb236;
+    transition: all 0.2s ease;
 }
 
 // =========== Color =============
 $my-white: white;
-$my-blue: #49488A;
+$my-blue: #062c33;
 $my-gray: rgb(253, 253, 253);
 $my-pink: #FDF0EA;
+$my-yellow: #ffb236;
 
 
 

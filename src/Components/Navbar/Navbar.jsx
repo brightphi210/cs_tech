@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 
 import { CgMenuLeft } from "react-icons/cg";
 import { MdClose } from "react-icons/md";
-import { IoMdArrowDropdown } from "react-icons/io";
 
 const Navbar = () => {
 
@@ -22,7 +21,7 @@ const Navbar = () => {
     <div className='navDivMain '> 
 
     <div className='maimLogo'>
-      <Link to={'/'}><div>CSTech</div></Link>
+      <Link to={'/'}><div className=''>CSTech</div></Link>
 
       <div className='navIcons'>
         {openNavbar ? <CgMenuLeft onClick={toggleNav}/> : <MdClose onClick={toggleNav}/>}
@@ -32,21 +31,20 @@ const Navbar = () => {
 
     <div className={`navDiv ${openNavbar ? 'open' : ''}`}>
       <div className='firstNavDiv'>
-      <Link to={'/'}><div>CSTech</div></Link>
+      <Link to={'/'}><div className='logoSelf'>CSTech</div></Link>
 
         <div className='navUl'>
-          <p>How it works</p>
-          <p>About us</p>
-          <p className='dropDown'>Category <IoMdArrowDropdown /></p>
-          <p>Find Talent</p>
+          <p>Home</p>
+          <p>Course</p>
+          <p>Portfolio</p>
         </div>
+
       </div>
 
 
       <div className='secondNavDiv'>
-        <Link to={'/signupCreative'}><p className='apply'>Apply as a Creative</p></Link>
-        <Link to={'/login'}><button className='loginBtn'>Login</button></Link>
-        <Link to={'/registerOption'}><button className='signupBtn'>Sing-up</button></Link>
+          <p>About us</p>
+          <button className='signupBtn'>Book Session</button>
       </div>
     </div>
 

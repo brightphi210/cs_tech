@@ -1,0 +1,39 @@
+@import '../variables.scss';
+
+*{@include default}
+
+
+.sectionTwo{
+    text-align: center;
+    padding: 30px 20%;
+}
+
+.sectionTwo h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sectionTwoFlex{
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.weDiv{
+    background-color: $my-white;
+    border-radius: 20px;
+    padding: 20px 30px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.weDiv img{
+    width: 100%;
+}
+
+.weDiv button{
+    padding: 6px 20px;
+    border-radius: 10px;
+    border: $my-blue solid 1px;
+    color: $my-blue;
+    background-color: $my-white;
+}

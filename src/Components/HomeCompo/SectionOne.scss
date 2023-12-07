@@ -1,0 +1,139 @@
+
+@import '../variables.scss';
+
+*{@include default}
+
+
+// =========================== Section One ============================
+
+.sectioOneMain{
+    padding: 130px 5%;
+    padding-bottom: 20px;
+}
+.sectionOne{
+    display: flex;
+    align-items: center;
+}
+
+.mainImage{
+    margin-left: auto;
+}
+
+.mainImage img{
+    width: 500px;
+}
+
+
+.sectioOneFirst span{
+    color: $my-yellow;
+}
+
+.sectioOneFirst h2{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.sectioOneFirst button{
+    @include button-style
+}
+
+.bookNow{
+    background-color: $my-white;
+    border: $my-blue solid 1px;
+    margin-top: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.bookNow:hover{
+    border: $my-yellow solid 1px;
+    transition: all 0.2s ease;
+}
+
+
+// ====================== section Bg ==========================
+
+.sectionOneBg{
+    background-color: $my-blue;
+    padding: 50px 5%;
+    margin-top: -5px;
+    border-radius: 20px;
+    display: flex;
+    color: $my-white;
+}
+
+
+.sectionOneBg h2{
+    font-size: 30px;
+}
+
+.levelBtn{
+    margin-left: auto;
+}
+
+.levelBtn button{
+    @include button-style;
+    background-color:$my-white;
+    border: none;
+    color: $my-blue;
+    padding: 10px 60px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.levelBtn button:hover{
+    background-color: $my-yellow;
+    color: $my-white;
+    transition: all 0.2s ease;
+}
+
+
+@media only screen and (min-width: $small-One) and (max-width: $medium-Two) {
+    .sectioOneMain{
+        padding: 100px 8%;
+    }
+    
+    .sectionOne{
+        display: block;
+        align-items: center;
+    }
+
+    .mainImage{
+        padding-top: 30px;
+    }
+    .mainImage img{
+        width: 100%;
+    }
+
+    .bookNow{
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .sectioOneFirst h2{
+        font-size: 21px;
+        font-weight: 500;
+    }
+
+ 
+
+
+    // ====================== section Bg ==========================
+    
+    .sectionOneBg{
+        display: block;
+        padding: 30px;
+    }
+
+    .leveOne h2{
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .levelBtn button{
+        padding: 10px 40px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+}
