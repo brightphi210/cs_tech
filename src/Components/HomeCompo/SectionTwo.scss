@@ -11,6 +11,7 @@
 .sectionTwo h2{
     font-size: 20px;
     font-weight: 400;
+    text-align: center;
 }
 
 .sectionTwoFlex{
@@ -38,8 +39,49 @@
     background-color: $my-white;
 }
 
+.weDiv p{
+    text-align: justify;
+    font-size: 11px;
+    padding-top: 10px;
+    font-weight: 300;
+}
+
+
+
+
+
+.sectionTwoOne{
+    padding: 30px 5%;
+    background-color: $my-blue;
+}
+
+
+.sectionTwoOne{
+    text-align: center;
+    color: $my-white;
+}
+
+.weDivOne{
+    background-color: $my-white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+.weDivOne img{
+    width: 100%;
+    border-radius: 20px;
+}
+
 
 @media only screen and (min-width: $small-One) and (max-width: $medium-Two) {
+    
+    .sectionTwo{
+        text-align: left;
+    }
+
     .sectionTwoFlex{
         display: block;
     }
@@ -53,8 +95,27 @@
     }
     
 
+
+    .sectionTwoOne{
+        text-align: center;
+        color: $my-white;
+    }
+
+
+    // =============== .sectionTwoFlex =========================
+    
+    .sectionTwoOne h2{
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
     .weDiv{
-        padding: 10px 20px;
+        padding: 20px;
         margin-bottom: 20px;
+    }
+
+    .weDiv img{
+        display: none;
     }
 }
