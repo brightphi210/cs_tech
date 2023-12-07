@@ -1,0 +1,122 @@
+@import '../variables.scss';
+
+*{@include default}
+
+
+.contactSession{
+    padding: 100px 5%;
+}
+
+.contactCard{
+    background-color: $my-blue;
+    padding: 40px;
+    border-radius: 30px;
+    text-align: center;
+    color: $my-white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.contactCard h2{
+    font-size: 35px;
+}
+
+
+.formDiv {
+    padding: 60px 25%;
+}
+
+.inputDiv label{
+    display: block;
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+
+.inputDiv input{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+
+.myDropdown{
+    font-size: 13px;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.myDropdown option{
+    font-size: 15px;
+}
+
+
+.inputDiv textarea{
+    width: 100%;
+    max-width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+}
+
+.textLabel{
+    padding-top: 20px;
+    font-weight: 300;
+}
+
+
+.formDiv button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: $small-One) and (max-width: $medium-Two) {
+    .contactCard h2{
+        font-size: 20px;
+    }
+
+    
+    .formDiv {
+        padding: 30px 5%;
+    }
+
+    .inputDiv label{
+        display: none;
+    }
+
+    .inputDiv input{
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .myDropdown{
+        border-radius: 5px;
+    }
+
+    .inputDiv textarea{
+        max-height: 130px;
+        min-height: 130px;
+    }
+}

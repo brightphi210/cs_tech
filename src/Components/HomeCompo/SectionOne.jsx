@@ -10,7 +10,7 @@ const SectionOne = () => {
             <div className='sectioOneFirst'>
                 <h2 className='bigH2'>
                     We build products to <span>WORK</span>, <br /> 
-                    and we build them <span>FAST </span> at <br />  your <span>  BUDGET</span>.
+                    and we build them <span>FAST </span> at  your <span> <br />   BUDGET</span>.
                 </h2>
 
                 <h2 className='smH2'>

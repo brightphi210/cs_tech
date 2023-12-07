@@ -21,7 +21,7 @@ const Navbar = () => {
     <div className='navDivMain '> 
 
     <div className='maimLogo'>
-      <Link to={'/'}><div className=''>CSTech</div></Link>
+      <Link to={'/'}><div className=''>CSTECH</div></Link>
 
       <div className='navIcons'>
         {openNavbar ? <CgMenuLeft onClick={toggleNav}/> : <MdClose onClick={toggleNav}/>}
@@ -31,7 +31,7 @@ const Navbar = () => {
 
     <div className={`navDiv ${openNavbar ? 'open' : ''}`}>
       <div className='firstNavDiv'>
-      <Link to={'/'}><div className='logoSelf'>CSTech</div></Link>
+      <Link to={'/'}><div className='logoSelf'>CSTECH</div></Link>
 
         <div className='navUl'>
           <Link to={'/'}><p>Home</p></Link>
@@ -43,13 +43,11 @@ const Navbar = () => {
 
 
       <div className='secondNavDiv'>
-          <p>About us</p>
-
           <Link to={'/contact'}><button className='signupBtn'>Book Session</button></Link>
-          
       </div>
-    </div>
 
+
+    </div>
 </div>
   )
 }

@@ -3,6 +3,8 @@ import ContactCom from '../Components/Contact/ContactCom'
 import Navbar from '../Components/Navbar/Navbar'
 
 const Contact = () => {
+  
+  
   return (
     <div>
         <Navbar />
