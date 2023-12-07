@@ -9,15 +9,18 @@
     display: flex;
     padding: 40px 8%;
     background-color: rgb(245, 245, 245);
+    align-items: center;
 }
 
 .footerIconDiv{
     display: flex;
-    gap: 10px;
+    gap: 30px;
+    align-items: center;
 }
 
 .footerIcon{
     font-size: 20px;
+    cursor: pointer;
 }
 
 .footerRight{
