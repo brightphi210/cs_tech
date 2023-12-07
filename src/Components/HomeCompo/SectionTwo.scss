@@ -37,3 +37,24 @@
     color: $my-blue;
     background-color: $my-white;
 }
+
+
+@media only screen and (min-width: $small-One) and (max-width: $medium-Two) {
+    .sectionTwoFlex{
+        display: block;
+    }
+
+    .sectionTwo{
+        padding: 30px 8%;
+    }
+
+    .sectionTwo h2{
+        font-size: 15px;
+    }
+    
+
+    .weDiv{
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+}
