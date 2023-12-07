@@ -20,3 +20,10 @@
 .courseCard h2{
     font-size: 35px;
 }
+
+
+@media only screen and (min-width: $small-One) and (max-width: $medium-Two) {
+    .courseCard h2{
+        font-size: 20px;
+    }
+}
