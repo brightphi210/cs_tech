@@ -35,7 +35,7 @@ const SectionOne = () => {
             </div>
 
             <div className='levelBtn'>
-                <button>Learn More</button>
+                <Link to={'/courses'}><button>Learn More</button></Link>
             </div>
         </div>
     </div>

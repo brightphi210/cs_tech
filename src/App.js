@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
+import Courses from "./Pages/Courses";
 function App() {
   return (
     <div className="App">
@@ -8,11 +9,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
-          {/* <Route path="/signup" element={<SignUp />}></Route>
-          <Route path="/signupCreative" element={<SignUp2 />}></Route>
-          <Route path="/category" element={<Category />}></Route>
-          <Route path="/talents" element={<Talents />}></Route>
-          <Route path="/registerOption" element={<RegistraionOption />}></Route> */}
+          <Route path="/courses" element={<Courses />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
