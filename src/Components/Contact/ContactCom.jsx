@@ -1,5 +1,4 @@
 import React from 'react'
-import { IoMdArrowDropdown } from "react-icons/io";
 import './ContactCom.scss'
 
 const ContactCom = () => {

@@ -2,6 +2,8 @@ import React from 'react'
 import mainImage from './images/head.png'
 
 
+import { Link } from 'react-router-dom'
+
 import './SectionOne.scss'
 const SectionOne = () => {
   return (
@@ -19,7 +21,7 @@ const SectionOne = () => {
                 </h2>
 
 
-                <button className='bookNow'>Book Session Here! </button>
+                <Link to={'/contact'}><button className='bookNow'>Book Session Here! </button></Link>
             </div>
 
             <div className='mainImage'> 
