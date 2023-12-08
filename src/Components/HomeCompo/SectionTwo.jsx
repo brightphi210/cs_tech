@@ -21,35 +21,30 @@ const SectionTwo = () => {
                 <div className='weDiv' data-aos="fade-up" data-aos-duration="3000">
                     <img src={imga} alt="" />
                     <button>Web 2</button>
-                    <p>
-                    Web 2.0 represents a user-centric, collaborative, 
-                    and dynamic approach to the web, 
-                    fostering a more interactive and participatory online experience.
-                    </p>
+                    <p>1. Mobile Apps</p>
+                    <p>2. Websites</p>
+                    <p>3. Efficient tech processes</p>
+                    <p>4. Web Apps</p>
+                    <p>5. Cross Platform Automations</p>
                 </div>
 
                 <div className='weDiv' data-aos="fade-up" data-aos-duration="3000">
                     <img src={imgb} alt="" />
                     <button>Web 3</button>
-                    <p>
-                        Web 2.0 represents a user-centric, collaborative, 
-                        and dynamic approach to the web, 
-                        fostering a more interactive and participatory online experience.
-                    </p>
+                    <p>1. We build dApps</p>
+                    <p>2. Develop Smart Contracts</p>
+                    <p>3. Integrate Oracles</p>
+                    <p>4. Tokenomics </p>
+                    <p>5. Token Creation</p>
                 </div>
 
                 <div className='weDiv' data-aos="fade-up" data-aos-duration="3000">
                     <img src={imgc} alt="" />
                     <button>Web 5</button>
-                    <p>
-                        Web 2.0 represents a user-centric, collaborative, 
-                        and dynamic approach to the web, 
-                        fostering a more interactive and participatory online experience.
-                    </p>
+                    <p>1. Research</p>
                 </div>
             </div>
         </div>
-
 
         <div className='sectionTwoOne'>
             <h2>Portfolio: </h2>
