@@ -15,7 +15,7 @@ const SectionOne = () => {
   return (
     <div className='sectioOneMain'>
         <div className='sectionOne'>
-            <div className='sectioOneFirst' data-aos="fade-left" data-aos-duration="3000">
+            <div className='sectioOneFirst' data-aos="fade-up" data-aos-duration="3000">
                 <h2 className='bigH2'>
                     We build products to <span>WORK</span>, <br /> 
                     and we build them <span>FAST </span> at  your <span> <br />   BUDGET</span>.
