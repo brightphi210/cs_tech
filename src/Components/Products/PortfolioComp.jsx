@@ -53,8 +53,6 @@ const PortfolioComp = () => {
         <Link to={'/contact'}><button>View App <FaArrowRightLong /></button></Link>
       </div>
     </div>
-
-
   </div>
   )
 }

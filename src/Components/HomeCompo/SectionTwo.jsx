@@ -14,7 +14,7 @@ const SectionTwo = () => {
         <div className='sectionTwo'>
             <h2>Development Infrastructures : </h2>
             <div className='sectionTwoFlex'>
-                <div className='weDiv'>
+                <div className='weDiv' data-aos="fade-up" data-aos-duration="3000">
                     <img src={imga} alt="" />
                     <button>Web 2</button>
                     <p>
@@ -24,7 +24,7 @@ const SectionTwo = () => {
                     </p>
                 </div>
 
-                <div className='weDiv'>
+                <div className='weDiv' data-aos="fade-up" data-aos-duration="3000">
                     <img src={imgb} alt="" />
                     <button>Web 3</button>
                     <p>
@@ -34,7 +34,7 @@ const SectionTwo = () => {
                     </p>
                 </div>
 
-                <div className='weDiv'>
+                <div className='weDiv' data-aos="fade-up" data-aos-duration="3000">
                     <img src={imgc} alt="" />
                     <button>Web 5</button>
                     <p>
@@ -50,7 +50,7 @@ const SectionTwo = () => {
         <div className='sectionTwoOne'>
             <h2>Portfolio: </h2>
             <div className='sectionTwoFlex'>
-                <div className='weDivOne'>
+                <div className='weDivOne' data-aos="fade-up" data-aos-duration="3000">
                     <img src={imgd} alt="" />
                     <h1>Bitsave:</h1>
                     <h2>
@@ -67,7 +67,7 @@ const SectionTwo = () => {
                     <p>Front End developments</p>
                 </div>
 
-                <div className='weDivOne'>
+                <div className='weDivOne' data-aos="fade-up" data-aos-duration="3000">
                     <img src={imgd} alt="" />
                     <h1>Emilist:</h1>
                     <h2>
