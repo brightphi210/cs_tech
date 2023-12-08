@@ -2,6 +2,8 @@ import React from 'react'
 
 import {Link} from 'react-router-dom'
 
+import { FaArrowRightLong } from "react-icons/fa6";
+
 import './CourseCom.scss'
 import bg1 from './v (1).png'
 import bg2 from './v (2).png'
@@ -11,13 +13,17 @@ import bg5 from './v (5).png'
 import bg6 from './v (6).png'
 import bg7 from './img1.png'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 
-import { FaArrowRightLong } from "react-icons/fa6";
+
+
 
 const CoursesCom = () => {
   return (
     <div className='courseSection'>
-      <div className='courseCard'>
+      <div className='courseCard' data-aos="fade-left" data-aos-duration="3000">
         <h2> Courses Availables</h2>
         <p>
           Our code academy teaches students in various programming languages;
@@ -26,14 +32,14 @@ const CoursesCom = () => {
       </div>
 
       <div className='courseGenDiv'>
-        <div className='eachCourse'>
+        <div className='eachCourse' data-aos="fade-up" data-aos-duration="3000">
           <img src={bg1} alt="" />
           <h2>Python</h2>
           <p>Conprehensive Python Course</p>
           <Link to={'/contact'}><button>Get Course <FaArrowRightLong /></button></Link>
         </div>
 
-        <div className='eachCourse'>
+        <div className='eachCourse' data-aos="fade-up" data-aos-duration="3000">
           <img src={bg7} alt="" />
           <h2>Javascript</h2>
           <p>Conprehensive Python Course</p>
@@ -41,21 +47,21 @@ const CoursesCom = () => {
         </div>
 
 
-        <div className='eachCourse'>
+        <div className='eachCourse' data-aos="fade-up" data-aos-duration="3000">
           <img src={bg6} alt="" />
           <h2>Smart Contract Development</h2>
           <p>Conprehensive Python Course</p>
           <Link to={'/contact'}><button>Get Course <FaArrowRightLong /></button></Link>
         </div>
 
-        <div className='eachCourse'>
+        <div className='eachCourse' data-aos="fade-up" data-aos-duration="3000">
           <img src={bg1} alt="" />
           <h2>Reach Framework and PYteal for Smartcontract developments.</h2>
           <p>Conprehensive Python Course</p>
           <Link to={'/contact'}><button>Get Course <FaArrowRightLong /></button></Link>
         </div>
 
-        <div className='eachCourse'>
+        <div className='eachCourse' data-aos="fade-up" data-aos-duration="3000">
           <img src={bg3} alt="" />
           <h2>Cross Platform development</h2>
           <p>Conprehensive Python Course</p>
@@ -63,7 +69,7 @@ const CoursesCom = () => {
         </div>
 
 
-        <div className='eachCourse'>
+        <div className='eachCourse' data-aos="fade-up" data-aos-duration="3000">
           <img src={bg1} alt="" />
           <h2>Web Design and Development</h2>
           <p>Conprehensive Python Course</p>
@@ -71,14 +77,14 @@ const CoursesCom = () => {
         </div>
 
 
-        <div className='eachCourse'>
+        <div className='eachCourse' data-aos="fade-up" data-aos-duration="3000">
           <img src={bg5} alt="" />
           <h2>Product Design</h2>
           <p>Conprehensive Python Course</p>
           <Link to={'/contact'}><button>Get Course <FaArrowRightLong /></button></Link>
         </div>
 
-        <div className='eachCourse'>
+        <div className='eachCourse' data-aos="fade-up" data-aos-duration="3000">
           <img src={bg4} alt="" />
           <h2>Data Analysis</h2>
           <p>Conprehensive Python Course</p>
@@ -86,7 +92,7 @@ const CoursesCom = () => {
         </div>
 
 
-        <div className='eachCourse'>
+        <div className='eachCourse' data-aos="fade-up" data-aos-duration="3000">
           <img src={bg2} alt="" />
           <h2>Cyber Security (Real World Practice)</h2>
           <p>Conprehensive Python Course</p>

@@ -6,11 +6,14 @@ import {Link} from 'react-router-dom'
 
 import imgs from './d.jpg'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 
 const PortfolioComp = () => {
   return (
     <div className='portfolioSection'>
-    <div className='portfolioCard'>
+    <div className='portfolioCard' data-aos="fade-left" data-aos-duration="3000">
       <h2>Our Portfolio</h2>
       <p>
         Our code academy teaches students in various programming languages;
@@ -19,7 +22,7 @@ const PortfolioComp = () => {
     </div>
 
     <div className='portfolioGenDiv'>
-      <div className='eachportfolio'>
+      <div className='eachportfolio' data-aos="fade-up" data-aos-duration="3000">
         <img src={imgs} alt="" />
         <h1>Bitsave:</h1>
         <h2>
@@ -37,7 +40,7 @@ const PortfolioComp = () => {
         <Link to={'/contact'}><button>View App <FaArrowRightLong /></button></Link>
       </div>
 
-      <div className='eachportfolio'>
+      <div className='eachportfolio' data-aos="fade-up" data-aos-duration="3000">
         <img src={imgs} alt="" />
         <h1>Emilist:</h1>
         <h2>
