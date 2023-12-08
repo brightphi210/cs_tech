@@ -16,7 +16,7 @@ const SectionTwo = () => {
             <div className='sectionTwoFlex'>
                 <div className='weDiv'>
                     <img src={imga} alt="" />
-                    <button>Web 1</button>
+                    <button>Web 2</button>
                     <p>
                     Web 2.0 represents a user-centric, collaborative, 
                     and dynamic approach to the web, 
@@ -26,7 +26,7 @@ const SectionTwo = () => {
 
                 <div className='weDiv'>
                     <img src={imgb} alt="" />
-                    <button>Web 2</button>
+                    <button>Web 3</button>
                     <p>
                         Web 2.0 represents a user-centric, collaborative, 
                         and dynamic approach to the web, 
@@ -36,7 +36,7 @@ const SectionTwo = () => {
 
                 <div className='weDiv'>
                     <img src={imgc} alt="" />
-                    <button>Web 3</button>
+                    <button>Web 5</button>
                     <p>
                         Web 2.0 represents a user-centric, collaborative, 
                         and dynamic approach to the web, 

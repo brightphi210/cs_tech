@@ -1,6 +1,12 @@
 import React from 'react'
 import './ContactCom.scss'
 
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
+
+
 const ContactCom = () => {
   return (
     <div className='contactSession'>
