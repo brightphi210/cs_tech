@@ -4,7 +4,7 @@ import './ContactCom.scss'
 const ContactCom = () => {
   return (
     <div className='contactSession'>
-      <div className='contactCard'>
+      <div className='contactCard' data-aos="fade-left" data-aos-duration="3000">
         <h2> Book a session now</h2>
         <p>
           Talk to us, about what you want, 
@@ -12,7 +12,7 @@ const ContactCom = () => {
         </p>
       </div>
 
-      <div className='formDiv'>
+      <div className='formDiv' data-aos="fade-up" data-aos-duration="3000">
         <form action="">
 
             <div className='inputDiv'>
