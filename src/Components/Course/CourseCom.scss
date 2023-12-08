@@ -45,7 +45,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(6, 44, 51, 0.5);
+    background-color: rgba(6, 44, 51, 0.7);
     border-radius: 30px;
 }
 
@@ -54,9 +54,77 @@
     isolation: isolate;
 }
 
+.courseCard button{
+    padding: 10px 30px;
+    background-color: $my-yellow;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    isolation: isolate;
+    color: white;
+    cursor: pointer;
+}
+
+.courseCard button:hover{
+    background-color: white ;
+    transition:all 0.5s ease-in-out;
+    color: $my-blue;
+}
+
 .courseCard p{
     isolation: isolate;
+    padding: 10px 0;
 }
+
+
+// ====================== Course Gen Div ======================
+
+.courseGenDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px 0;
+    
+}
+
+.eachCourse{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.eachCourse img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.eachCourse h2{
+    font-size: 17px;
+    font-weight: 400;
+    padding: 0 !important;
+}
+
+.eachCourse p{
+    padding: 10px 0;
+}
+
+.eachCourse button{
+    font-size: 12px;
+    display: flex;
+    gap: 10px;
+    align-items: center;    
+    padding: 6px 20px;
+    border-radius: 20px;
+    border: $my-blue solid 1px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.eachCourse button:hover{
+    margin-left: 10px;
+    transition: all 0.5s ease; 
+}
+
 
 @media only screen and (min-width: $small-One) and (max-width: $medium-Two) {
     .courseCard h2{
@@ -65,7 +133,7 @@
     
 
     .courseCard{
-        padding: 30px;
+        padding: 35px;
         border-radius: 10px;
     }
 
@@ -74,6 +142,22 @@
     }
 
     .courseCard p{
+        font-size: 12px;
+    }
+
+    .courseGenDiv{
+        display: grid;
+        grid-template-columns: 1fr;   
+    }
+
+    .courseCard button{
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .eachCourse p{
+        padding: 5px 0;
+        padding-bottom: 10px;
         font-size: 12px;
     }
 }
