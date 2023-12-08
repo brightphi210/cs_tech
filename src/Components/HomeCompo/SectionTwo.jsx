@@ -7,6 +7,10 @@ import imgd from './images/d.jpg'
 
 import './SectionTwo.scss'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
+
 
 const SectionTwo = () => {
   return (
