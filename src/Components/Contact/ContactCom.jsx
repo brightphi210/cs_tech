@@ -10,7 +10,7 @@ AOS.init();
 const ContactCom = () => {
   return (
     <div className='contactSession'>
-      <div className='contactCard' data-aos="fade-left" data-aos-duration="3000">
+      <div className='contactCard' data-aos="fade-up" data-aos-duration="3000">
         <h2> Book a session now</h2>
         <p>
           Talk to us, about what you want, 
