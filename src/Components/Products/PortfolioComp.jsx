@@ -13,7 +13,7 @@ AOS.init();
 const PortfolioComp = () => {
   return (
     <div className='portfolioSection'>
-    <div className='portfolioCard' data-aos="fade-left" data-aos-duration="3000">
+    <div className='portfolioCard' data-aos="fade-up" data-aos-duration="3000">
       <h2>Our Portfolio</h2>
       <p>
         Our code academy teaches students in various programming languages;

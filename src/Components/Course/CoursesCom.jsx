@@ -23,7 +23,7 @@ AOS.init();
 const CoursesCom = () => {
   return (
     <div className='courseSection'>
-      <div className='courseCard' data-aos="fade-left" data-aos-duration="3000">
+      <div className='courseCard' data-aos="fade-up" data-aos-duration="3000">
         <h2> Courses Availables</h2>
         <p>
           Our code academy teaches students in various programming languages;
