@@ -5,6 +5,10 @@
 *{@include default}
 
 
+// =========================== course Section ===========================
+
+
+
 .courseSection{
     padding: 100px 5%;
 }
@@ -17,13 +21,59 @@
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
-.courseCard h2{
-    font-size: 35px;
+
+
+.courseCard{
+    padding: 60px 5%;
+    gap: 30px;
+    background-image: url('./v\ \(3\).png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    animation: changeBackground 10s linear infinite;
+    border-radius: 30px;
 }
 
+
+
+.courseCard::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 44, 51, 0.5);
+    border-radius: 30px;
+}
+
+.courseCard h2{
+    font-size: 35px;
+    isolation: isolate;
+}
+
+.courseCard p{
+    isolation: isolate;
+}
 
 @media only screen and (min-width: $small-One) and (max-width: $medium-Two) {
     .courseCard h2{
         font-size: 20px;
+    }
+    
+
+    .courseCard{
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .courseCard::before {
+        border-radius: 10px;
+    }
+
+    .courseCard p{
+        font-size: 12px;
     }
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import './CourseCom.scss'
+import bg from './v (6).png'
 
 const CoursesCom = () => {
   return (
