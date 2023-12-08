@@ -1,16 +1,16 @@
 import React from 'react'
 import Navbar from '../Components/Navbar/Navbar'
-import CoursesCom from '../Components/Course/CoursesCom'
 import Footer from '../Components/Footer/Footer'
+import PortfolioComp from '../Components/Products/PortfolioComp'
 
-const Courses = () => {
+const Portfolio = () => {
   return (
     <div>
         <Navbar />
-        <CoursesCom />
+        <PortfolioComp />
         <Footer />
     </div>
   )
 }
 
-export default Courses
+export default Portfolio

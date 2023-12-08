@@ -1,6 +1,7 @@
 import React from 'react'
 import './SectionThree.scss'
 
+import { Link } from 'react-router-dom';
 
 import { IoLogoPython } from "react-icons/io5";
 import { IoLogoJavascript } from "react-icons/io";
@@ -32,7 +33,7 @@ const SectionThree = () => {
             </div>
         </div>
 
-        <button>Explore More <IoIosSend /></button>
+        <Link to={'/courses'}><button>Explore More <IoIosSend /></button></Link>
     </div>
   )
 }

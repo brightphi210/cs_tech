@@ -12,7 +12,7 @@ const Footer = () => {
     <div className='footerSection'>
 
         <div className='footerLogo'>
-            <h2>CSTech</h2>
+            <h3>CSTECH</h3>
             <p>Home of the Best Talent all <br /> Over Africa</p>
         </div>
 

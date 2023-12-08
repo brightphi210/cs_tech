@@ -5,14 +5,15 @@
 *{@include default}
 
 
-// =========================== course Section ===========================
+// =========================== portfolio Section ===========================
 
 
 
-.courseSection{
+.portfolioSection{
     padding: 100px 5%;
+
 }
-.courseCard{
+.portfolioCard{
     background-color: $my-yellow;
     padding: 40px;
     border-radius: 30px;
@@ -23,10 +24,10 @@
 
 
 
-.courseCard{
+.portfolioCard{
     padding: 60px 5%;
     gap: 30px;
-    background-image: url('./v\ \(3\).png');
+    background-image: url('./v\ \(4\).png');
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
@@ -38,7 +39,7 @@
 
 
 
-.courseCard::before {
+.portfolioCard::before {
     content: ""; 
     position: absolute;
     top: 0;
@@ -49,12 +50,12 @@
     border-radius: 30px;
 }
 
-.courseCard h2{
+.portfolioCard h2{
     font-size: 35px;
     isolation: isolate;
 }
 
-.courseCard button{
+.portfolioCard button{
     padding: 10px 30px;
     background-color: $my-yellow;
     border-radius: 20px;
@@ -65,50 +66,57 @@
     cursor: pointer;
 }
 
-.courseCard button:hover{
+.portfolioCard button:hover{
     background-color: white ;
     transition:all 0.5s ease-in-out;
     color: $my-blue;
 }
 
-.courseCard p{
+.portfolioCard p{
     isolation: isolate;
     padding: 10px 0;
 }
 
 
-// ====================== Course Gen Div ======================
+// ====================== portfolio Gen Div ======================
 
-.courseGenDiv{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+.portfolioGenDiv{
+    display: flex;
     gap: 20px;
-    padding: 20px 0;
+    padding: 20px 15%;
+    justify-content: center;
     
 }
 
-.eachCourse{
+.eachportfolio{
+    width: 100%;
     padding: 10px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
-.eachCourse img{
+.eachportfolio img{
     width: 100%;
     border-radius: 10px;
 }
 
-.eachCourse h2{
+.eachportfolio h1{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.eachportfolio h2{
     font-size: 17px;
     font-weight: 400;
     padding: 0 !important;
+    color: gray;
 }
 
-.eachCourse p{
-    padding: 10px 0;
+.eachportfolio p{
+    padding: 5px 0;
 }
 
-.eachCourse button{
+.eachportfolio button{
     font-size: 12px;
     display: flex;
     gap: 10px;
@@ -120,48 +128,55 @@
     cursor: pointer;
 }
 
-.eachCourse button:hover{
+.eachportfolio button:hover{
     margin-left: 10px;
     transition: all 0.5s ease; 
 }
 
 
 @media only screen and (min-width: $small-One) and (max-width: $medium-Two) {
-    .courseSection{
+    
+    .portfolioSection{
         padding-bottom: 30px;
     }
     
-    .courseCard h2{
+    .portfolioCard h2{
         font-size: 20px;
     }
-    
 
-    .courseCard{
+
+    .portfolioCard{
         padding: 35px;
         border-radius: 10px;
     }
 
-    .courseCard::before {
+    .portfolioCard::before {
         border-radius: 10px;
     }
 
-    .courseCard p{
+    .portfolioCard p{
         font-size: 12px;
     }
 
-    .courseGenDiv{
+    .portfolioGenDiv{
         display: grid;
-        grid-template-columns: 1fr;   
+        grid-template-columns: 1fr;  
+        padding: 20px 0; 
     }
 
-    .courseCard button{
+    .portfolioCard button{
         padding: 10px 20px;
         font-size: 12px;
     }
 
-    .eachCourse p{
+    .eachportfolio p{
         padding: 5px 0;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
         font-size: 12px;
+    }
+
+
+    .eachportfolio button{
+        margin-top: 10px;
     }
 }
