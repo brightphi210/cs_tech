@@ -37,7 +37,7 @@ const PortfolioComp = () => {
         <p>UI/UX design</p>
         <p>Smart Contract development</p>
         <p>Front End developments</p>
-        <Link to={'/contact'}><button>View App <FaArrowRightLong /></button></Link>
+        {/* <Link to={'/contact'}><button>View App <FaArrowRightLong /></button></Link> */}
       </div>
 
       <div className='eachportfolio' data-aos="fade-up" data-aos-duration="3000">
@@ -50,7 +50,7 @@ const PortfolioComp = () => {
         <p>Emilist Web app (Landing page and user dashboard/area)</p>
         <p>Emilist Admin Dashboard</p>
         <p>Emilist Cross Platform Mobile App</p>
-        <Link to={'/contact'}><button>View App <FaArrowRightLong /></button></Link>
+        {/* <Link to={'/contact'}><button>View App <FaArrowRightLong /></button></Link> */}
       </div>
     </div>
   </div>
