@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 import { CgMenuLeft } from "react-icons/cg";
 import { MdClose } from "react-icons/md";
 
+import logo from './CSLogo.png'
+
 const Navbar = () => {
 
     const [openNavbar, setOpenNavvbar] = useState(true)
@@ -21,7 +23,7 @@ const Navbar = () => {
     <div className='navDivMain '> 
 
     <div className='maimLogo'>
-      <Link to={'/'}><div className=''>CSTECH</div></Link>
+      <Link to={'/'}><div className=''><img src={logo} alt="" width={100}/></div></Link>
 
       <div className='navIcons'>
         {openNavbar ? <CgMenuLeft onClick={toggleNav}/> : <MdClose onClick={toggleNav}/>}
@@ -31,7 +33,7 @@ const Navbar = () => {
 
     <div className={`navDiv ${openNavbar ? 'open' : ''}`}>
       <div className='firstNavDiv'>
-      <Link to={'/'}><div className='logoSelf'>CSTECH</div></Link>
+      <Link to={'/'}><div className='logoSelf'><img src={logo} alt="" width={130}/></div></Link>
 
         <div className='navUl'>
           <Link to={'/'}><p>Home</p></Link>
