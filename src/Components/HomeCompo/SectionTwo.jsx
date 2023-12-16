@@ -3,6 +3,7 @@ import imga from './images/a (1).png'
 import imgb from './images/a (2).png'
 import imgc from './images/a (3).png'
 import imgd from './images/d.jpg'
+import imge from './images/as.png'
 
 
 import './SectionTwo.scss'
@@ -67,7 +68,7 @@ const SectionTwo = () => {
                 </div>
 
                 <div className='weDivOne' data-aos="fade-up" data-aos-duration="3000">
-                    <img src={imgd} alt="" />
+                    <img src={imge} alt="" />
                     <h1>Emilist:</h1>
                     <h2>
                         Emilist is a service hiring platform 
