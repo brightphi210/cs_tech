@@ -104,7 +104,7 @@ const ContactCom = () => {
               </textarea>
             </div>
 
-            <button type="submit">Submit</button>
+            <button type="submit">{isLoading ? 'Submit': 'Loading . . .'}</button>
           
         </form>
         
