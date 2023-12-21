@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import './ContactCom.scss'
 
 import { useForm, ValidationError } from '@formspree/react';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 
 import AOS from 'aos';
@@ -13,25 +15,32 @@ AOS.init();
 
 const ContactCom = () => {
 
-  const [state, handleSubmit] = useForm('mleqrdyr');
-
-  const [show, setShow] = useState(true)
-
-  const [isLoading, setIsLoading] = useState(true)
+    const [isLoading, setIsLoading] = useState(false)
+    const [show, setShow] = useState(false)
 
 
-  const setFalse = () => {
-    setShow(false)
-  }
-  
-  
-  // if(state === false) {
-  //   setIsLoading(true)
-  // }
+  const form = useRef();
 
-  // else{
-  //   setIsLoading(false)
-  // }
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    setIsLoading(true);
+
+
+    emailjs.sendForm('service_84n2o4x', 'template_bi2lptt', form.current, 'SePfbvFDjlAZc65wg')
+      .then((result) => {
+          console.log(result.text);
+          console.log('Email Successfully sent')
+          setIsLoading(false)
+          setShow(true)
+          e.target.reset()
+      }, (error) => {
+          console.log(error.text);
+          console.log('Email Failure')
+      });
+  };
+
+
 
   
   return (
@@ -46,18 +55,17 @@ const ContactCom = () => {
 
 
       <div className='formDiv' data-aos="fade-up" data-aos-duration="3000">
-        <form action="" onSubmit={handleSubmit}>
+        <form action="" onSubmit={sendEmail} ref={form}>
+
 
             <div className='inputDiv'>
                 <label htmlFor="">Name</label>
-                <input type="text" id='name' name='name' placeholder='Provide Name: '/>
+                <input type="text" id='name' name='user_name' placeholder='Provide Name: '/>
             </div>
 
             <div className='inputDiv'>
                 <label htmlFor="">Number</label>
-                <input type="phone number" id='phone' name='phone' placeholder='Provide Number: '/>
-
-
+                <input type="phone number" id='phone' name='user_number' placeholder='Provide Number: '/>
             </div>
 
 
@@ -66,25 +74,23 @@ const ContactCom = () => {
                 <input 
                   type="email" 
                   id="email"
-                  name="email"
+                  name="user_email"
                 
                 placeholder='Provide Email: '/>
 
-                <ValidationError 
-                  prefix="Email" 
-                  field="email"
-                  errors={state.errors}
-                />
             </div>
 
-            <div className='inputDiv' > 
-              <label >Purpose</label>
-              <select className="myDropdown" >
-                <option value="option2" id='_optin'>Code Academy</option>
-                <option value="option3" id='_optin'>Product Development</option>
-              </select>
-            </div>
 
+            <div className='inputDiv'>
+                <label htmlFor="">Category</label>
+                <input 
+                  type="text" 
+                  id="text"
+                  name="category"
+                
+                placeholder='Academy or Product Development '/>
+
+            </div>
 
             <div className='inputDiv'>
               <label className='textLabel'>
@@ -96,33 +102,26 @@ const ContactCom = () => {
                placeholder='tell use what you want'>
 
               </textarea>
-              <ValidationError 
-                prefix="Message" 
-                field="message"
-                errors={state.errors}
-              />
             </div>
 
-            <button type="submit" disabled={state.submitting}>{isLoading ? 'Submit' : 'Loading . . .'}</button>
+            <button type="submit">Submit</button>
           
         </form>
         
       </div>
 
 
-      {state.succeeded && (
         <div>
           {show && (<div>
             <div className='modal'>
             <div className='modal-content'>
               <h2>Message Sucessfull</h2>
               <p>Message has been sent successfully, you will recieve a reply shortly</p>
-              <button onClick={setFalse}>Close</button>
+              <button onClick={()=>{setShow(false)}}>Close</button>
             </div>
           </div>
           </div>)}
         </div>
-      )}
       
     </div>
   )
