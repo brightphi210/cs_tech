@@ -123,7 +123,7 @@ const ContactCom = () => {
                   id="text"
                   name="category1"
                 
-                placeholder='e.g Academy Category ' />
+                placeholder='Category 1 e.g Academy Category ' />
 
             </div>
 
@@ -133,7 +133,7 @@ const ContactCom = () => {
                   type="text" 
                   id="text"
                   name="category2"
-                placeholder='e.g Product Development Category ' />
+                placeholder='Category 2 e.g Product Development Category ' />
 
             </div>
 
