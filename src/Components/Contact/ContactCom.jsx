@@ -116,8 +116,7 @@ const ContactCom = () => {
               <textarea
                 id="message"
                 name="message"
-                placeholder='tell use what you want' required>
-
+                placeholder='Great, so what would you like us to do for you 😁' required>
               </textarea>
             </div>
 
