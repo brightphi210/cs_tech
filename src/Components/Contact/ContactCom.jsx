@@ -87,8 +87,8 @@ const ContactCom = () => {
       <div className='formDiv' data-aos="fade-up" data-aos-duration="3000">
         <form action="" onSubmit={sendEmail} ref={form}>
 
-            {!isValid && <p style={{ color: 'red', paddingBottom : 10 }}>Phone Number Must Not be Empty and Must Be Valid.</p>}
-            {isValid && <p style={{ color: 'green', paddingBottom : 10 }}>Phone Number is ok</p>}
+            {/* {!isValid && <p style={{ color: 'red', paddingBottom : 10 }}>Phone Number Must Not be Empty and Must Be Valid.</p>}
+            {isValid && <p style={{ color: 'green', paddingBottom : 10 }}>Phone Number is ok</p>} */}
 
 
             <div className='inputDiv'>
