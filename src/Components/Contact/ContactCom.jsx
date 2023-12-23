@@ -115,7 +115,7 @@ const ContactCom = () => {
 
             </div>
 
-
+{/* 
             <div className='inputDiv'>
                 <label htmlFor="">Academy</label>
                 <input 
@@ -135,7 +135,7 @@ const ContactCom = () => {
                   name="category2"
                 placeholder='Category 2 e.g Product Development ' />
 
-            </div>
+            </div> */}
 
             <div className='inputDiv'>
               <label className='textLabel'>
