@@ -120,10 +120,20 @@
     font-size: 18px;
 }
 
+.modal-content h2{
+    color: green;
+}
+
 .modal-content button{
     padding: 10px 20px;
     border: none;
     border-radius: 10px ;
+    background-color: $my-blue;
+    color: white;
+}
+
+.inputDiv p{
+    font-size: 12px;
 }
 
 

@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import './ContactCom.scss'
-
-import { useForm, ValidationError } from '@formspree/react';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -15,7 +13,6 @@ AOS.init();
 
 const ContactCom = () => {
 
-    const [isLoading, setIsLoading] = useState(true)
     const [show, setShow] = useState(false)
 
 
@@ -51,16 +48,12 @@ const ContactCom = () => {
 
 
     e.preventDefault();
-
-    setIsLoading(true);
-
     
 
     emailjs.sendForm('service_84n2o4x', 'template_bi2lptt', form.current, 'SePfbvFDjlAZc65wg')
       .then((result) => {
           console.log(result.text);
           console.log('Email Successfully sent')
-          setIsLoading(false)
           setShow(true)
           e.target.reset()
       }, (error) => {
@@ -87,8 +80,7 @@ const ContactCom = () => {
       <div className='formDiv' data-aos="fade-up" data-aos-duration="3000">
         <form action="" onSubmit={sendEmail} ref={form}>
 
-            {/* {!isValid && <p style={{ color: 'red', paddingBottom : 10 }}>Phone Number Must Not be Empty and Must Be Valid.</p>}
-            {isValid && <p style={{ color: 'green', paddingBottom : 10 }}>Phone Number is ok</p>} */}
+
 
 
             <div className='inputDiv'>
@@ -101,6 +93,8 @@ const ContactCom = () => {
                 <input type="text" id='phone' name='user_number' placeholder='Provide Number: '
                 value={phoneNumber}
                 onChange={handlePhoneNumberChange}required/>
+                  {!isValid && <p style={{ color: 'pink', paddingBottom : 10 }}>Field Must not be empty.</p>}
+                  {isValid && <p style={{ color: 'green', paddingBottom : 10 }}>Good to go</p>}
             </div>
 
 
@@ -114,28 +108,6 @@ const ContactCom = () => {
                 placeholder='Provide Email: ' required/>
 
             </div>
-
-{/* 
-            <div className='inputDiv'>
-                <label htmlFor="">Academy</label>
-                <input 
-                  type="text" 
-                  id="text"
-                  name="category1"
-                
-                placeholder='Category 1 e.g Academy ' />
-
-            </div>
-
-            <div className='inputDiv'>
-                <label htmlFor="">Product Development</label>
-                <input 
-                  type="text" 
-                  id="text"
-                  name="category2"
-                placeholder='Category 2 e.g Product Development ' />
-
-            </div> */}
 
             <div className='inputDiv'>
               <label className='textLabel'>
