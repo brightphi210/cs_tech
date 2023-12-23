@@ -93,8 +93,8 @@ const ContactCom = () => {
                 <input type="text" id='phone' name='user_number' placeholder='Provide Number: '
                 value={phoneNumber}
                 onChange={handlePhoneNumberChange}required/>
-                  {!isValid && <p style={{ color: 'pink', paddingBottom : 10 }}>Field Must not be empty.</p>}
-                  {isValid && <p style={{ color: 'green', paddingBottom : 10 }}></p>}
+                  {/* {!isValid && <p style={{ color: 'pink', paddingBottom : 10 }}>Field Must not be empty.</p>} */}
+                  {/* {isValid && <p style={{ color: 'green', paddingBottom : 10 }}></p>} */}
             </div>
 
 
