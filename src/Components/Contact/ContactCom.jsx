@@ -94,7 +94,7 @@ const ContactCom = () => {
                 value={phoneNumber}
                 onChange={handlePhoneNumberChange}required/>
                   {!isValid && <p style={{ color: 'pink', paddingBottom : 10 }}>Field Must not be empty.</p>}
-                  {isValid && <p style={{ color: 'green', paddingBottom : 10 }}>Good to go</p>}
+                  {isValid && <p style={{ color: 'green', paddingBottom : 10 }}></p>}
             </div>
 
 
