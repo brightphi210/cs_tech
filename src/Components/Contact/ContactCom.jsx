@@ -15,17 +15,46 @@ AOS.init();
 
 const ContactCom = () => {
 
-    const [isLoading, setIsLoading] = useState(false)
+    const [isLoading, setIsLoading] = useState(true)
     const [show, setShow] = useState(false)
 
 
   const form = useRef();
 
+
+  
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [isValid, setIsValid] = useState(false);
+
+  const validatePhoneNumber = (number) => {
+    const isValidNumber = /^\d{11}$/.test(number);
+    setIsValid(isValidNumber);
+    return isValidNumber;
+  };
+
+  const handlePhoneNumberChange = (event) => {
+    const newPhoneNumber = event.target.value;
+    setPhoneNumber(newPhoneNumber);
+    validatePhoneNumber(newPhoneNumber);
+  };
+
+
+
+
   const sendEmail = (e) => {
+
+    if (validatePhoneNumber(phoneNumber)) {
+      console.log('Valid phone number:', phoneNumber);
+    } else {
+      console.log('Invalid phone number');
+    }
+
+
     e.preventDefault();
 
     setIsLoading(true);
 
+    
 
     emailjs.sendForm('service_84n2o4x', 'template_bi2lptt', form.current, 'SePfbvFDjlAZc65wg')
       .then((result) => {
@@ -37,7 +66,8 @@ const ContactCom = () => {
       }, (error) => {
           console.log(error.text);
           console.log('Email Failure')
-      });
+    });
+
   };
 
 
@@ -57,15 +87,20 @@ const ContactCom = () => {
       <div className='formDiv' data-aos="fade-up" data-aos-duration="3000">
         <form action="" onSubmit={sendEmail} ref={form}>
 
+            {!isValid && <p style={{ color: 'red', paddingBottom : 10 }}>Phone Number Must Not be Empty and Must Be Valid.</p>}
+            {isValid && <p style={{ color: 'green', paddingBottom : 10 }}>Phone Number is ok</p>}
+
 
             <div className='inputDiv'>
                 <label htmlFor="">Name</label>
-                <input type="text" id='name' name='user_name' placeholder='Provide Name: '/>
+                <input type="text" id='name' name='user_name' placeholder='Provide Name: ' required/>
             </div>
 
             <div className='inputDiv'>
                 <label htmlFor="">Number</label>
-                <input type="phone number" id='phone' name='user_number' placeholder='Provide Number: '/>
+                <input type="text" id='phone' name='user_number' placeholder='Provide Number: '
+                value={phoneNumber}
+                onChange={handlePhoneNumberChange}required/>
             </div>
 
 
@@ -76,19 +111,29 @@ const ContactCom = () => {
                   id="email"
                   name="user_email"
                 
-                placeholder='Provide Email: '/>
+                placeholder='Provide Email: ' required/>
 
             </div>
 
 
             <div className='inputDiv'>
-                <label htmlFor="">Category</label>
+                <label htmlFor="">Academy</label>
                 <input 
                   type="text" 
                   id="text"
-                  name="category"
+                  name="category1"
                 
-                placeholder='Academy or Product Development '/>
+                placeholder='e.g Academy Category ' />
+
+            </div>
+
+            <div className='inputDiv'>
+                <label htmlFor="">Product Development</label>
+                <input 
+                  type="text" 
+                  id="text"
+                  name="category2"
+                placeholder='e.g Product Development Category ' />
 
             </div>
 
@@ -99,12 +144,12 @@ const ContactCom = () => {
               <textarea
                 id="message"
                 name="message"
-               placeholder='tell use what you want'>
+                placeholder='tell use what you want' required>
 
               </textarea>
             </div>
 
-            <button type="submit">{isLoading ? 'Submit': 'Loading . . .'}</button>
+            <button type="submit">Submit</button>
           
         </form>
         
