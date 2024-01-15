@@ -1,6 +1,7 @@
 import React from 'react'
 
 import './Footer.scss'
+import logo from './CSLogo.png'
 
 import { Link } from 'react-router-dom';
 import { FaLinkedin } from "react-icons/fa";
@@ -13,8 +14,7 @@ const Footer = () => {
     <div className='footerSection'>
 
         <div className='footerLogo'>
-            <h3>CSTECH</h3>
-            <p>Home of the Best Talent all <br /> Over Africa</p>
+            <img src={logo}alt="" width={100}/>
         </div>
 
         <div className='footerRight'>
