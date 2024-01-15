@@ -131,7 +131,7 @@ const ContactCom = () => {
           {show && (<div>
             <div className='modal'>
             <div className='modal-content'>
-              <h2>Message Sucessfull</h2>
+              <h2>Message Sucessfully</h2>
               <p>Message has been sent successfully, you will recieve a reply shortly</p>
               <button onClick={()=>{setShow(false)}}>Close</button>
             </div>

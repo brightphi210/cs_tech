@@ -5,6 +5,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import {Link} from 'react-router-dom'
 
 import imgs from './d.jpg'
+import emi from './as.png'
+
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
@@ -41,7 +43,7 @@ const PortfolioComp = () => {
       </div>
 
       <div className='eachportfolio' data-aos="fade-up" data-aos-duration="3000">
-        <img src={imgs} alt="" />
+        <img src={emi} alt="" />
         <h1>Emilist:</h1>
         <h2>
             Emilist is a service hiring platform 
